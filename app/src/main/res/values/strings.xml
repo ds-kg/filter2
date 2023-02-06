@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">filter2</string>
+    <string name="edittext_hint_ot"><font size="12">   От</font></string>
+    <string name="edittext_hint_do"><font size="12">   До</font></string>
 </resources>

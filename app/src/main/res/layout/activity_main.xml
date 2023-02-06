@@ -7,22 +7,24 @@
     tools:context=".MainActivity">
 
     <RelativeLayout
-        android:layout_width="360dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
 
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_filter"
-        android:layout_width="50dp"
+        android:layout_width="51dp"
         android:layout_height="20dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="72dp"
+        android:fontFamily="@font/rubik"
         android:text="Фильтр"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -63,7 +65,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="196dp"
+        android:fontFamily="@font/rubik"
         android:text="Цена"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -73,8 +77,10 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="220dp"
         android:background="@drawable/rectangle_rounded_stroked"
+        android:hint="@string/edittext_hint_ot"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+
         tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
@@ -84,7 +90,9 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/rectangle_rounded_stroked"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="@string/edittext_hint_do"
+        />
 
     <TextView
         android:id="@+id/tv_square"
@@ -92,7 +100,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="272dp"
+        android:fontFamily="@font/rubik"
         android:text="Площадь м"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -101,6 +111,7 @@
         android:layout_height="34dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="296dp"
+        android:hint="@string/edittext_hint_ot"
         android:background="@drawable/rectangle_rounded_stroked"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -112,7 +123,10 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/rectangle_rounded_stroked"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="@string/edittext_hint_do"
+
+        />
 
     <TextView
         android:id="@+id/tv_floor"
@@ -120,7 +134,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="352dp"
+        android:fontFamily="@font/rubik"
         android:text="Этажность"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -131,7 +147,9 @@
         android:layout_marginTop="376dp"
         android:background="@drawable/rectangle_rounded_stroked"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="@string/edittext_hint_ot"
+        />
 
     <EditText
         android:layout_width="180dp"
@@ -140,27 +158,10 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/rectangle_rounded_stroked"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="@string/edittext_hint_do"
 
-    <Button
-        android:layout_width="59.2dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="452dp"
-        android:background="@drawable/rectangle_rounded_all"
-        app:layout_constrainedHeight="false"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:layout_width="350dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="660dp"
-        android:background="@drawable/rectangle_rounded_all"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        />
 
     <TextView
         android:id="@+id/tv_rooms"
@@ -168,10 +169,131 @@
         android:layout_height="20dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="428dp"
+        android:fontFamily="@font/rubik"
         android:text="Количество комнат"
-        android:textSize="13sp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <Button
+        android:layout_width="62dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="452dp"
+        android:background="@drawable/rectangle_rounded_all"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Cтудия"
+        android:textSize="11sp"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:layout_width="62dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="452dp"
+        android:text="1"
+        android:textSize="11sp"
+        android:background="@drawable/rectangle_rounded_all"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_width="62dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="452dp"
+        android:layout_marginStart="176.2dp"
+        android:background="@drawable/rectangle_rounded_all"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="2"
+        android:textSize="11sp"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="62dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginTop="452dp"
+        android:background="@drawable/rectangle_rounded_all"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="3"
+        android:textSize="11sp"
+        />
+
+    <Button
+        android:layout_width="62dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="452dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rectangle_rounded_all"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="4+"
+        android:textSize="11sp"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="46dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="509dp"
+        android:fontFamily="@font/rubik"
+        android:text="Город"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="534dp"
+        android:background="@drawable/rectangle_rounded_all"
+        android:fontFamily="@font/rubik"
+        android:textAllCaps="false"
+        android:text="Бишкек"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="534dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rectangle_rounded_all"
+        android:fontFamily="@font/rubik"
+        android:text="Ош"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:layout_width="375dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="660dp"
+        android:backgroundTint="@color/dark_blue"
+        android:background="@drawable/rectangle_rounded_all"
+        android:fontFamily="@font/rubik"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Найти"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        />
+
+
 
 
 
