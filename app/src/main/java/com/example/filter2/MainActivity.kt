@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
         val spinner = findViewById<Spinner>(R.id.spinner1)
         if (spinner != null) {
             val adapter = ArrayAdapter(
