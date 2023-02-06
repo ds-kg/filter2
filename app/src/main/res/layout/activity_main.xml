@@ -128,7 +128,6 @@
         android:hint="@string/edittext_hint_do"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-
         tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
