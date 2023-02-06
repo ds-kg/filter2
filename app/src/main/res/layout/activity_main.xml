@@ -36,7 +36,8 @@
         android:layout_marginStart="16dp"
         android:background="@drawable/rectangle_rounded_all"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <Spinner
         android:id="@+id/spinner2"
@@ -46,7 +47,8 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/rectangle_rounded_all"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <Spinner
         android:id="@+id/spinner3"
@@ -57,7 +59,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/tv_price"
@@ -89,10 +92,10 @@
         android:layout_marginTop="220dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/rectangle_rounded_stroked"
+        android:hint="@string/edittext_hint_do"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:hint="@string/edittext_hint_do"
-        />
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/tv_square"
@@ -111,10 +114,11 @@
         android:layout_height="34dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="296dp"
-        android:hint="@string/edittext_hint_ot"
         android:background="@drawable/rectangle_rounded_stroked"
+        android:hint="@string/edittext_hint_ot"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:layout_width="180dp"
@@ -122,11 +126,11 @@
         android:layout_marginTop="296dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/rectangle_rounded_stroked"
+        android:hint="@string/edittext_hint_do"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:hint="@string/edittext_hint_do"
 
-        />
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/tv_floor"
@@ -146,10 +150,10 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="376dp"
         android:background="@drawable/rectangle_rounded_stroked"
+        android:hint="@string/edittext_hint_ot"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:hint="@string/edittext_hint_ot"
-        />
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:layout_width="180dp"
@@ -157,11 +161,11 @@
         android:layout_marginTop="376dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/rectangle_rounded_stroked"
+        android:hint="@string/edittext_hint_do"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:hint="@string/edittext_hint_do"
 
-        />
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/tv_rooms"
@@ -176,55 +180,55 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-
     <Button
         android:layout_width="62dp"
         android:layout_height="29dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="452dp"
         android:background="@drawable/rectangle_rounded_all"
+        android:text="Cтудия"
+        android:textAllCaps="false"
+        android:textSize="11sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="Cтудия"
-        android:textSize="11sp"
-        android:textAllCaps="false"
-        />
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:layout_width="62dp"
         android:layout_height="29dp"
         android:layout_marginStart="96dp"
         android:layout_marginTop="452dp"
+        android:background="@drawable/rectangle_rounded_all"
         android:text="1"
         android:textSize="11sp"
-        android:background="@drawable/rectangle_rounded_all"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:layout_width="62dp"
         android:layout_height="29dp"
-        android:layout_marginTop="452dp"
         android:layout_marginStart="176.2dp"
+        android:layout_marginTop="452dp"
         android:background="@drawable/rectangle_rounded_all"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         android:text="2"
         android:textSize="11sp"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="62dp"
         android:layout_height="29dp"
-        android:layout_marginEnd="96dp"
         android:layout_marginTop="452dp"
+        android:layout_marginEnd="96dp"
         android:background="@drawable/rectangle_rounded_all"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:text="3"
         android:textSize="11sp"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:layout_width="62dp"
@@ -232,11 +236,11 @@
         android:layout_marginTop="452dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/rectangle_rounded_all"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:text="4+"
         android:textSize="11sp"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
 
 
     <TextView
@@ -258,11 +262,12 @@
         android:layout_marginTop="534dp"
         android:background="@drawable/rectangle_rounded_all"
         android:fontFamily="@font/rubik"
-        android:textAllCaps="false"
         android:text="Бишкек"
         android:textAlignment="center"
+        android:textAllCaps="false"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:layout_width="180dp"
@@ -274,24 +279,25 @@
         android:text="Ош"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
 
 
     <Button
         android:layout_width="375dp"
         android:layout_height="35dp"
         android:layout_marginTop="660dp"
-        android:backgroundTint="@color/dark_blue"
         android:background="@drawable/rectangle_rounded_all"
+        android:backgroundTint="@color/dark_blue"
         android:fontFamily="@font/rubik"
+        android:text="Найти"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="Найти"
-        android:textColor="@color/white"
-        android:textAllCaps="false"
-        />
+        tools:ignore="TouchTargetSizeCheck" />
 
 
 
